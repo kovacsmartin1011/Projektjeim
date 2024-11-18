@@ -1,0 +1,14 @@
+C:\Users\nindz\source\repos\Komplex_beadando\Komplex_beadando\bin\Debug\Komplex_beadando.exe.config
+C:\Users\nindz\source\repos\Komplex_beadando\Komplex_beadando\bin\Debug\Komplex_beadando.exe
+C:\Users\nindz\source\repos\Komplex_beadando\Komplex_beadando\bin\Debug\Komplex_beadando.pdb
+C:\Users\nindz\source\repos\Komplex_beadando\Komplex_beadando\obj\Debug\Komplex_beadando.csproj.AssemblyReference.cache
+C:\Users\nindz\source\repos\Komplex_beadando\Komplex_beadando\obj\Debug\Komplex_beadando.csproj.CoreCompileInputs.cache
+C:\Users\nindz\source\repos\Komplex_beadando\Komplex_beadando\obj\Debug\Komplex_beadando.exe
+C:\Users\nindz\source\repos\Komplex_beadando\Komplex_beadando\obj\Debug\Komplex_beadando.pdb
+C:\Users\kovac\OneDrive\Desktop\Projektjeim\C#\Komplex_beadando\Komplex_beadando\bin\Debug\Komplex_beadando.exe.config
+C:\Users\kovac\OneDrive\Desktop\Projektjeim\C#\Komplex_beadando\Komplex_beadando\bin\Debug\Komplex_beadando.exe
+C:\Users\kovac\OneDrive\Desktop\Projektjeim\C#\Komplex_beadando\Komplex_beadando\bin\Debug\Komplex_beadando.pdb
+C:\Users\kovac\OneDrive\Desktop\Projektjeim\C#\Komplex_beadando\Komplex_beadando\obj\Debug\Komplex_beadando.csproj.AssemblyReference.cache
+C:\Users\kovac\OneDrive\Desktop\Projektjeim\C#\Komplex_beadando\Komplex_beadando\obj\Debug\Komplex_beadando.csproj.CoreCompileInputs.cache
+C:\Users\kovac\OneDrive\Desktop\Projektjeim\C#\Komplex_beadando\Komplex_beadando\obj\Debug\Komplex_beadando.exe
+C:\Users\kovac\OneDrive\Desktop\Projektjeim\C#\Komplex_beadando\Komplex_beadando\obj\Debug\Komplex_beadando.pdb

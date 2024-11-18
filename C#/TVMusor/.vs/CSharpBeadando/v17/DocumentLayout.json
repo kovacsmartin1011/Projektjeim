@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kovac\\OneDrive\\Desktop\\Projektjeim\\C#\\TVMusor\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C55062A0-C321-4C3D-9DCF-2F3BDBBC7006}|CSharpBeadando\\CSharpBeadando.csproj|c:\\users\\kovac\\onedrive\\desktop\\projektjeim\\c#\\tvmusor\\csharpbeadando\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C55062A0-C321-4C3D-9DCF-2F3BDBBC7006}|CSharpBeadando\\CSharpBeadando.csproj|solutionrelative:csharpbeadando\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C55062A0-C321-4C3D-9DCF-2F3BDBBC7006}|CSharpBeadando\\CSharpBeadando.csproj|C:\\Users\\kovac\\OneDrive\\Desktop\\Projektjeim\\C#\\TVMusor\\csharpbeadando\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C55062A0-C321-4C3D-9DCF-2F3BDBBC7006}|CSharpBeadando\\CSharpBeadando.csproj|solutionrelative:csharpbeadando\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\kovac\\OneDrive\\Desktop\\Projektjeim\\C#\\TVMusor\\CSharpBeadando\\Form1.cs",
+              "RelativeDocumentMoniker": "CSharpBeadando\\Form1.cs",
+              "ToolTip": "C:\\Users\\kovac\\OneDrive\\Desktop\\Projektjeim\\C#\\TVMusor\\CSharpBeadando\\Form1.cs",
+              "RelativeToolTip": "CSharpBeadando\\Form1.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAgwBwAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T11:35:37.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\kovac\\OneDrive\\Desktop\\Projektjeim\\C#\\TVMusor\\CSharpBeadando\\Form1.cs",
+              "RelativeDocumentMoniker": "CSharpBeadando\\Form1.cs",
+              "ToolTip": "C:\\Users\\kovac\\OneDrive\\Desktop\\Projektjeim\\C#\\CSharpBeadando\\CSharpBeadando\\Form1.cs [Design]",
+              "RelativeToolTip": "..\\CSharpBeadando\\CSharpBeadando\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T11:33:10.4Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

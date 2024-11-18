@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="hu">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Kapcsolat - Elden Ring</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="nyomtat.css">
+		<style>
+			.velemeny {
+			  display: flex;
+			}
+
+			.velemeny label {
+			  margin-right: 0;
+			  margin-left:5px;
+			}
+		</style>
+		
+	</head>
+	
+	<body>
+		<header>
+			<nav>
+				<div id="linkkep">
+					<a href="index.html"><img src="képek/grace.png"/>KEZDŐLAP</a>
+					<a href="story.html"><img src="képek/grace.png"/>STORY</a>
+					<a href="class.html"><img src="képek/grace.png"/>CLASSOK</a>
+					<a href="urlap.html"><img src="képek/grace.png"/>KAPCSOLAT</a>	
+				</div>
+			</nav>
+			
+		</header>
+		
+		<div id="fologo">
+			<a href="index.html"><img src="képek/logo.png" /></a>
+		</div>
+		
+		<div class="tartalom1">
+			<div class="urlap">
+			<h1>Véleményed a játékról</h1>
+			<br>
+				<form action="mailto:ubwrvy@inf.elte.hu" method="post" enctype="text/plain">
+					<label for="szoveg">Fejtsd ki a véleményed:</label>
+					<textarea id="szoveg" name="szoveg" rows="14" cols="125" maxlength="400" placeholder="Írj ide valamit..."></textarea>
+
+					<label for="nev">Neved:</label>
+					<input type="text" id="nev" name="nev" maxlength="32" placeholder="Írd be a neved...">
+					
+					<label>Értékeld a játékot 1-5 skálán:</label>
+					<div class="velemeny">
+						
+						<label for="opcio1">1</label>
+						<input type="radio" id="opcio1" name="opciok" value="opcio1">
+						
+						<label for="opcio2">2</label>
+						<input type="radio" id="opcio2" name="opciok" value="opcio2">
+						
+						<label for="opcio3">3</label>
+						<input type="radio" id="opcio3" name="opciok" value="opcio3">
+
+						<label for="opcio4">4</label>
+						<input type="radio" id="opcio4" name="opciok" value="opcio4">			
+						
+						<label for="opcio5">5</label>
+						<input type="radio" id="opcio5" name="opciok" value="opcio5">
+						
+					</div>
+					<br>
+					<div class="velemeny">
+						<label for="egyezik">Elfogadom a feltételeket</label>
+						<input type="checkbox" id="egyezik" name="egyezik">
+					</div>
+				
+					<input type="reset" id="resetGomb" value="Űrlap törlése">
+
+					<input type="submit" id="submitGomb" value="Űrlap elküldése">
+				</form>
+			</div>
+		</div>
+		
+		<footer>
+			<a href="#fologo">↑↑↑ Vissza a tetejére ↑↑↑</a>
+		</footer>		
+	</body>
+</html>

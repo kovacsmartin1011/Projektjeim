@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="hu">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Kezdőlap - Elden Ring</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="nyomtat.css">
+		<link rel="stylesheet" href="reszponziv.css">
+	</head>
+	
+	<body>
+		<header>
+			<nav>
+				<div id="linkkep">
+					<a href="index.html"><img src="képek/grace.png"/>KEZDŐLAP</a>
+					<a href="story.html"><img src="képek/grace.png"/>STORY</a>
+					<a href="class.html"><img src="képek/grace.png"/>CLASSOK</a>
+					<a href="urlap.html"><img src="képek/grace.png"/>KAPCSOLAT</a>	
+				</div>
+			</nav>
+			
+		</header>
+		
+		<div id="fologo">
+			<a href="#"><img src="képek/logo.png" /></a>
+		</div>
+		
+		<div class="tartalom1">
+			<div class="elol">
+				<img src="képek/grace.png" alt="icon"/>
+				<h1>MIKOR JELENT MEG AZ ELDEN RING?</h1>
+			</div>
+				<p>Az <a href="https://store.steampowered.com/agecheck/app/1245620/" class="link" target="_blank">Elden Ring</a> 2022. február 25-én jelent meg minden platformra. Az eredeti, január 21-i megjelenési dátumot a 2021-es Summer Game Festen jelentették be, a késést pedig 2021. október 18-án a Twitteren keresztül fedték fel.</p>
+
+			<div class="elol">
+				<img src="képek/grace.png" alt="icon"/>
+				<h1>VAN ELDEN RING DLC?</h1>
+			</div>
+				<p>A Shadow of the Erdtree egy közelgő DLC az Elden Ringhez. A hivatalos Elden Ring fiók által Twitteren keresztül bejelentett DLC tartalmáról nem sok részletet tudunk, hogy egy teljes értékű bővítményről van-e szó, és hogy mire számíthatnak a játékosok a méret és az ár tekintetében.</p>
+			
+			<div class="elol">
+				<img src="képek/grace.png" alt="icon"/>
+				<h1>MILYEN PLATFORMOKRA KÉSZÜLT AZ ELDEN RING?</h1>
+			</div>
+				<p>Az Elden Ring PS4-re, Xbox One-ra és PC-re érhető el. Az Elden Ring elérhető Playstation 5-re és Xbox One X-re INGYENES frissítésként.</p>
+			
+			<div class="elol">
+				<img src="képek/grace.png" alt="icon"/>
+				<h1>MIÓTA DOLGOZNAK AZ ELDEN RING-EN?</h1>
+			</div>
+				<p>A játék 2017 eleje óta készül, nem sokkal azután, hogy megjelent egy DLC, a Ringed City a Dark Souls 3-hoz. Az Elden Ringet és a Sekiro: Shadows Die Twice-t is párhuzamosan fejlesztették a játékokhoz kijelölt társrendezők. A játék megjelenését azóta többször is elhalasztották, de az első leleplező Ttrailert a 2019-es E3-on mutatták be hivatalos megjelenési dátum nélkül. Ezt követően 2020 novembere körülre tűzték ki a megjelenést, de ismét elhalasztották. Néhány újabb csúszás után végül 2022. február 25-én jelent meg minden platformra. Az eredeti, január 21-i megjelenési dátumot a 2021-es Summer Game Fest alatt jelentették be, a késést pedig 2021. október 18-án a Twitteren keresztül fedték fel.</p> 
+			
+			<div class="elol">
+				<img src="képek/grace.png" alt="icon"/>
+				<h1>ELDEN RING RENDSZERKÖVETELMÉNYEK</h1>
+				 <ul>
+					<li>CPU: Intel Core i5-8400 / AMD FX-Ryzen 3 3300X</li>
+					<li>RAM: 12 GB</li>
+					<li>OS: Windows 10</li>
+					<li>VIDEO CARD: Nvidia GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB</li>
+					<li>Directx: Directx 12 (Feature Level 12.0)</li>
+					<li>Storage: 60GB</li>
+					<li>Sound Card: Windows-Compatible Audio Device</li>
+				</ul>
+			</div>
+			
+			<div class="elol">
+				<img src="képek/grace.png" alt="icon"/>
+				<h1>MINIMUM KELLÉK</h1>
+				<ul>
+					<li>CPU: Intel Core i7-8700K / AMD Ryzen 5 3600X</li>
+					<li>RAM: 16 GB</li>
+					<li>OS: Windows 11/10</li>
+					<li>VIDEO CARD: Nvidia GeForce GTX 1070 8GB / AMD Radeon RX Vega 56 8GB</li>
+					<li>Directx: Directx 12 (Feature Level 12.0)</li>
+					<li>Storage: 60GB</li>
+					<li>Sound Card: Windows-Compatible Audio Device</li>
+				</ul>
+			</div>
+			
+			<div class="kep">
+				<figure>
+					<img id="img" src="képek/kep2.jpg" title="Malenia" alt="Malenia"/>
+					<figcaption>Malenia</figcaption>		
+					<img id="img2" src="képek/kep3.jpeg" title="Queen Marika the Eternal" alt="Queen Marika the Eternal"/>
+					<figcaption>Queen Marika the Eternal</figcaption>
+				</figure>
+			</div>
+			
+			
+			  <div id="nagyDiv" class="nagy">
+				<span class="bezargomb" onclick="closeModal()">&times;</span>
+				<img class="nagy-tartalom" id="nagyKep" alt="nagyKep">
+			 </div>
+		</div>
+		
+		<footer>
+			<a href="#fologo">↑↑↑ Vissza a tetejére ↑↑↑</a>
+			<button id="gyengegomb" onclick="gyenge()">Kontrasztos mód</button>
+		</footer>
+		
+		<script>  
+			  document.getElementById('img').addEventListener('click', function() {
+				  var modal = document.getElementById('nagyDiv');
+				  var modalImg = document.getElementById('nagyKep');
+				  modal.style.display = 'block';
+				  modalImg.src = this.src;
+				});
+				
+					document.getElementById('img2').addEventListener('click', function() {
+				  var modal = document.getElementById('nagyDiv');
+				  var modalImg = document.getElementById('nagyKep');
+				  modal.style.display = 'block';
+				  modalImg.src = this.src;
+				});
+				
+				function closeModal() {
+				  document.getElementById('nagyDiv').style.display = 'none';
+				}				
+				
+				function gyenge() {
+					var body = document.body;
+					body.classList.toggle('gyengenlato');
+				}
+		</script>			
+	</body>
+</html>

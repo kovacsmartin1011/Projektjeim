@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Losers' Game</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="menu">
+    <h1>Losers' Game</h1>
+    <button id="playButton">Play</button>
+    <br>
+    <button id="controlsButton">Controls</button>
+  </div>
+  <div id="blokk" style="position: relative; display: inline-block">
+    <div style="position: absolute; display: flex; width: 100%; align-items: center; padding: 20px;">
+
+      <div id="player1Health" style="border: 4px dashed black; border-right: none; border-radius:15px; background: linear-gradient(45deg, #FF8C8C, #FF1493); height: 30px; width: 100%"></div>
+      <!-- lövések száma-->
+      <div id="kills" style="border: 5px solid white; background-color: black; height: 100px; width: 100px; flex-shrink: 0;"></div>
+
+      <div id="player2Health" style="border: 4px dashed black; border-left: none; border-radius:15px; background: linear-gradient(45deg, #FF1493, #FF8C8C); height: 30px; width: 100%"></div>
+    </div>
+
+    <div id="player1Health"></div>
+    <div id="player2Health"></div>
+    <canvas></canvas>
+  </div>
+  <script src="class.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
