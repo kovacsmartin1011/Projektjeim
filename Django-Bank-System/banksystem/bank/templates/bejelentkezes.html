@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BankSystem - Bejelentkezés</title>
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <!-- Bal oldal (bevezető szöveg) -->
+            <div class="left">
+                <div class="login">Bejelentkezés</div>
+                <div class="eula">A bejelentkezéssel elfogadod az adatvédelmi szabályzatunkat.</div>
+            </div>
+
+            <!-- Jobb oldal (form és hivatkozás) -->
+            <div class="right">
+                <form method="post" class="form">
+                    {% csrf_token %}
+                    
+                    <div class="form-group">
+                        {{ form.as_p }}
+                    </div>
+                    
+                    <button type="submit" id="submit">Bejelentkezés</button>
+                    
+                    <div>
+                        <p>
+                            Nincs fiókod? 
+                            <a href="{% url 'regisztracio' %}">Regisztrálj!</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

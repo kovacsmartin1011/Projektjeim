@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BankSystem - Számla</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="{% url 'penz_feltoltes' %}">Pénz feltöltése</a></li>
+            <li><a href="{% url 'penz_levetel' %}">Pénz levétele</a></li>
+            <li><a href="{% url 'penz_utalas' %}">Pénz utalása</a></li>
+            <li><a href="{% url 'tranzakcio' %}">Tranzakciók</a></li>
+            <br><br>
+            <li><a href="{% url 'kijelentkezes' %}">Kijelentkezés</a></li>
+        </ul>
+    </nav>
+
+    <div class="account-details">
+        <h1>{{ szamla.felhasznalo.username }}</h1>
+        <p><strong>Számlaszám:</strong> {{ szamla.szamlaszam }}</p>
+        <p><strong>Egyenleg:</strong> {{ szamla.egyenleg }} HUF</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Bank Rendszer. Minden jog fenntartva.</p>
+    </footer>
+</body>
+</html>

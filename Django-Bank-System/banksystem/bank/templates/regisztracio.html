@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BankSystem - Regisztráció</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'register.css' %}">
+</head>
+<body>
+
+    <div class="page">
+        <div class="container">
+            <div class="left">
+                <div class="login">Regisztráció</div>
+                <div class="eula">A regisztrációval elfogadod az adatvédelmi szabályzatunkat</div>
+            </div>
+
+            <div class="right">
+                <svg viewBox="0 0 320 300">
+                    <defs>
+                        <linearGradient id="linearGradient" x1="13" y1="193.49992" x2="307" y2="193.49992" gradientUnits="userSpaceOnUse">
+                            <stop style="stop-color:#ff00ff;" offset="0" />
+                            <stop style="stop-color:#ff0000;" offset="1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+
+                <form method="POST" class="form">
+                    {% csrf_token %}
+
+                    <div class="form-group">
+                        <label for="id_username">Felhasználónév</label>
+                        <input type="text" name="username" id="id_username"  class="form-control {% if form.username.errors %}is-invalid{% endif %}" />
+                        {% for error in form.username.errors %}
+                            <div class="invalid-feedback">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="form-group">
+                        <label for="id_email">Email</label>
+                        <input type="email" name="email" id="id_email" class="form-control {% if form.email.errors %}is-invalid{% endif %}" />
+                        {% for error in form.email.errors %}
+                            <div class="invalid-feedback">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="form-group">
+                        <label for="id_password1">Jelszó</label>
+                        <input type="password" name="password1" id="id_password1" class="form-control {% if form.password1.errors %}is-invalid{% endif %}" />
+                        {% for error in form.password1.errors %}
+                            <div class="invalid-feedback">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="form-group">
+                        <label for="id_password2">Jelszó megerősítése</label>
+                        <input type="password" name="password2" id="id_password2" class="form-control {% if form.password2.errors %}is-invalid{% endif %}" />
+                        {% for error in form.password2.errors %}
+                            <div class="invalid-feedback">{{ error }}</div>
+                        {% endfor %}
+                    </div>
+
+                    <button type="submit" id="submit">Regisztráció</button>
+                    
+                    <div>
+                        <p>Már regisztráltál? <a href="{% url 'bejelentkezes' %}">Bejelentkezés</a></p>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>

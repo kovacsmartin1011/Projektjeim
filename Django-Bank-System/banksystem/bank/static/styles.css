@@ -1,0 +1,219 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    position: relative;
+    margin: 0;
+    font-family: 'Inter UI', sans-serif;
+    background: #e2e2e5;
+    color: #1e1e1e;
+}
+
+.navbar {
+    background-color: lightgrey;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1vh 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2vw;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 2vh;
+    padding: 2vh;
+    display: block;
+}
+
+.navbar ul li a:hover {
+    background-color: #e2e2e5;;
+    color: #56CCF2;
+    transform: scale(1.1);
+}
+
+.navbar ul li a.active {
+    background-color: #444;
+    color: #56CCF2;
+    font-size: 1.2em;
+    transform: scale(1.1);
+}
+
+.account-details {
+    margin-top: 5vh;
+}
+
+.account-details.h1{
+    margin: 5vh;
+    font-size: 8vh;
+}
+
+.account-details.p{
+    margin: 5vh;
+    font-size: 5vh;
+}
+
+input {
+    background: transparent;
+    border: 1px solid #c2c2c5;
+    color: black;
+    font-size: 16px;
+    height: 20px;
+    line-height: 30px;
+    outline: none !important;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+input:focus {
+    border-color: #56CCF2;
+}
+
+#submit {
+    color: #707075;
+    margin-top: 40px;
+    transition: color 300ms;
+    background-color: #56CCF2;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#submit:hover {
+    background-color: #2F80ED;
+}
+
+.invalid-feedback {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+a {
+    margin: 30px;
+    display:block;
+    color: red;
+    align-self: flex-start;
+    text-decoration: none;
+}
+
+
+/*reszponzivitás*/
+
+/* Mobil eszközök (max-width: 600px) */
+@media (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column;
+        padding-left: 0;
+    }
+    
+    .navbar ul li a {
+        font-size: 4vh;
+        padding: 5vh 0;
+    }
+
+    .account-details h1 {
+        font-size: 12vh;
+    }
+
+    .account-details p {
+        font-size: 6vh;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #submit {
+        padding: 14px;
+        font-size: 18px;
+    }
+}
+
+/* Tablet eszközök (max-width: 768px) */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        padding-left: 0;
+    }
+    
+    .navbar ul li a {
+        font-size: 3vh;
+        padding: 3vh 0;
+    }
+
+    .account-details h1 {
+        font-size: 10vh;
+    }
+
+    .account-details p {
+        font-size: 5vh;
+    }
+
+    input {
+        font-size: 15px;
+        padding: 9px;
+    }
+
+    #submit {
+        padding: 15px;
+        font-size: 16px;
+    }
+}
+
+/* Desktop eszközök (min-width: 1025px) */
+@media (min-width: 1625px) {
+    .navbar ul {
+        padding-left: 2vw;
+    }
+    
+    .navbar ul li a {
+        font-size: 2vh;
+        padding: 2vh;
+    }
+
+    .account-details h1 {
+        font-size: 8vh;
+    }
+
+    .account-details p {
+        font-size: 5vh;
+    }
+
+    input {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    #submit {
+        padding: 12px;
+        font-size: 16px;
+    }
+}

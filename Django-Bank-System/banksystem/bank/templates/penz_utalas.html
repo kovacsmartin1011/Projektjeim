@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BankSystem - Utalás</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="{% url 'penz_feltoltes' %}">Pénz feltöltése</a></li>
+            <li><a href="{% url 'penz_levetel' %}">Pénz levétele</a></li>
+            <li><a href="{% url 'penz_utalas' %}">Pénz utalása</a></li>
+            <li><a href="{% url 'tranzakcio' %}">Tranzakciók</a></li>
+            <br><br>
+            <li><a href="{% url 'kijelentkezes' %}">Kijelentkezés</a></li>
+        </ul>
+    </nav>
+    <h1>Pénz utalása</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" id="submit">Utalás</button>
+    </form>
+    <a href="{% url 'szamla_attekintes' %}">Vissza az áttekintéshez</a>
+</body>
+</html>
